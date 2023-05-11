@@ -23,6 +23,7 @@ int main(int argc, char** argv) {
 }
     for (; powtorzen > 0; powtorzen--) {
         puts(komunikat);
+        // system("ps aux | grep fork1 | grep -v grep");  // ewentualnie zamiast polecenia w oddzielny oknie
         sleep(1);
     }
 }
