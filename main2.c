@@ -15,11 +15,11 @@ int main(int argc, char** argv) {
             exit(1);
         case 0:
             komunikat = "Jestem potomkiem";
-            powtorzen = 3; // po prostu jeden trwa dluzej od drugiego
+            powtorzen = 1; // po prostu jeden trwa dluzej od drugiego
             break;
         default:
             komunikat = "Jestem rodzicem";
-            powtorzen = 1;
+            powtorzen = 3; // to samo tylko na odwrrot
             break;
 }
     for (; powtorzen > 0; powtorzen--) {
