@@ -23,7 +23,7 @@ int main(int argc, char** argv) {
 }
     for (; powtorzen > 0; powtorzen--) {
         puts(komunikat);
-        // system("ps aux | grep fork1 | grep -v grep");  // ewentualnie zamiast polecenia w oddzielny oknie 
+        printf("rodzic: %d ja: %d potomek: %d \n", getppid(), getpid(), pid_potomka);
         sleep(1);
     }
 }
@@ -31,6 +31,6 @@ int main(int argc, char** argv) {
 /*
  * plik binarny fork1
  *
- * while true; do ps -ef | grep fork1 | grep -v grep; sleep 3; done
+ * gcc -c main.c -o main.o; gcc -o fork1 main.o; ./fork1
  *
  */
